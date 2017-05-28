@@ -1,0 +1,54 @@
+{
+  "name": "skimia-sef",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./build/skimia-sef.js",
+  "types": "build/skimia-sef.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:live": "tsc --watch",
+    "test": "jest",
+    "test:live": "jest --watch",
+    "cover": "jest --coverage",
+    "cover:report": "opener ./coverage/lcov-report/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kesslerdev/skimia-sef.git"
+  },
+  "keywords": [],
+  "author": "Skimia Agency",
+  "license": "MIT",
+  "homepage": "https://",
+  "devDependencies": {
+    "@types/jest": "^19.2.3",
+    "@types/node": "^7.0.18",
+    "jest": "^20.0.3",
+    "nodemon": "^1.11.0",
+    "opener": "^1.4.3",
+    "ts-jest": "^20.0.4",
+    "typescript": "^2.3.2"
+  },
+  "jest": {
+    "mapCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.(ts|tsx)"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "dependencies": {
+    "tslint-config-skimia": "^1.0.0"
+  }
+}
