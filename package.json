@@ -17,9 +17,9 @@
     "url": "https://github.com/kesslerdev/skimia-sef.git"
   },
   "keywords": [],
-  "author": "Skimia Agency",
+  "author": "kesslerdev",
   "license": "MIT",
-  "homepage": "https://",
+  "homepage": "https://github.com/kesslerdev/skimia-sef",
   "devDependencies": {
     "@types/jest": "^19.2.3",
     "@types/node": "^7.0.18",
